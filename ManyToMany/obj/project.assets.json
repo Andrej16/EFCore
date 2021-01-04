@@ -5751,30 +5751,39 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jhggjhgjh\\.nuget\\packages\\": {}
+    "C:\\Users\\ashilin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OneDrive\\.NET Framework projects\\EF6 and Core\\EFCore\\ManyToMany\\ManyToMany.csproj",
+      "projectUniqueName": "G:\\OneDrive\\.NET Framework projects\\EF6 and Core\\EFCore\\ManyToMany\\ManyToMany.csproj",
       "projectName": "ManyToMany",
-      "projectPath": "D:\\OneDrive\\.NET Framework projects\\EF6 and Core\\EFCore\\ManyToMany\\ManyToMany.csproj",
-      "packagesPath": "C:\\Users\\jhggjhgjh\\.nuget\\packages\\",
-      "outputPath": "D:\\OneDrive\\.NET Framework projects\\EF6 and Core\\EFCore\\ManyToMany\\obj\\",
+      "projectPath": "G:\\OneDrive\\.NET Framework projects\\EF6 and Core\\EFCore\\ManyToMany\\ManyToMany.csproj",
+      "packagesPath": "C:\\Users\\ashilin\\.nuget\\packages\\",
+      "outputPath": "G:\\OneDrive\\.NET Framework projects\\EF6 and Core\\EFCore\\ManyToMany\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\jhggjhgjh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ashilin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -5786,6 +5795,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
@@ -5813,7 +5823,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
