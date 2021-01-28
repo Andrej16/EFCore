@@ -7,6 +7,7 @@ namespace QueriesToOracle
     {
         public DbSet<IdentRisk> IdentRisks { get; set; }
         public DbSet<Subject> Subjects { get; set; }
+        public DbSet<TKeyValue> KeyValues { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseOracle(@"Data Source=dboracledev.ingo.office:1521/insbcp;Persist Security Info=True;User ID=INSURADM;Password=AisIngo");
@@ -16,7 +17,13 @@ namespace QueriesToOracle
             modelBuilder.HasAnnotation("Relational:DefaultSchema", "INSURADM");
             modelBuilder.ApplyConfiguration(new IdentRiskConfiguration());
             modelBuilder.ApplyConfiguration(new SubjectConfiguration());
+            modelBuilder.ApplyConfiguration(new TKeyValueConfiguration());
         }
+    }
+    public class TKeyValue
+    {
+        public string Key { get; set; }
+        public string Value { get; set; }
     }
     public class IdentRisk
     {

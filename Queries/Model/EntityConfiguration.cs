@@ -3,6 +3,17 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace QueriesToOracle
 {
+    public class TKeyValueConfiguration : IEntityTypeConfiguration<TKeyValue>
+    {
+        public void Configure(EntityTypeBuilder<TKeyValue> builder)
+        {
+            builder.HasNoKey();
+            builder.Property(p => p.Key)
+                .HasColumnName("KEY");
+            builder.Property(p => p.Value)
+                .HasColumnName("VALUE");
+        }
+    }
     public class IdentRiskConfiguration : IEntityTypeConfiguration<IdentRisk>
     {
         public void Configure(EntityTypeBuilder<IdentRisk> builder)
