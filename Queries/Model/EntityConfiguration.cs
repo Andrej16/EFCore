@@ -3,6 +3,29 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace QueriesToOracle
 {
+    //For query
+    public class IdentDataConfiguration : IEntityTypeConfiguration<IdentData>
+    {
+        public void Configure(EntityTypeBuilder<IdentData> bl)
+        {
+            //bl.HasNoKey();
+            bl.Property(p => p.Id)
+                .HasColumnName("ID");
+            bl.Property(p => p.SubjectId)
+                .HasColumnName("SUBJECTID");
+            bl.Property(p => p.SubjectName)
+                .HasColumnName("SUBJECTNAME");
+            bl.Property(p => p.DateBirth)
+                .HasColumnName("DATEBIRTH");
+            bl.Property(p => p.Inn)
+                .HasColumnName("INN");
+            bl.Property(p => p.DateIdentStart)
+                .HasColumnName("DATEIDENTSTART");
+            bl.Property(p => p.DateIdentEnd)
+                .HasColumnName("DATEIDENTEND");
+        }
+    }
+    //For query
     public class TKeyValueConfiguration : IEntityTypeConfiguration<TKeyValue>
     {
         public void Configure(EntityTypeBuilder<TKeyValue> builder)

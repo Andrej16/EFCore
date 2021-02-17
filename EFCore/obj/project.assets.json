@@ -1186,33 +1186,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ashilin\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\jhggjhgjh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\OneDrive\\.NET Framework projects\\EF6 and Core\\EFCore\\EFCore\\EFCore.csproj",
+      "projectUniqueName": "D:\\OneDrive\\.NET Framework projects\\EF6 and Core\\EFCore\\EFCore\\EFCore.csproj",
       "projectName": "EFCore",
-      "projectPath": "G:\\OneDrive\\.NET Framework projects\\EF6 and Core\\EFCore\\EFCore\\EFCore.csproj",
-      "packagesPath": "C:\\Users\\ashilin\\.nuget\\packages\\",
-      "outputPath": "G:\\OneDrive\\.NET Framework projects\\EF6 and Core\\EFCore\\EFCore\\obj\\",
+      "projectPath": "D:\\OneDrive\\.NET Framework projects\\EF6 and Core\\EFCore\\EFCore\\EFCore.csproj",
+      "packagesPath": "C:\\Users\\jhggjhgjh\\.nuget\\packages\\",
+      "outputPath": "D:\\OneDrive\\.NET Framework projects\\EF6 and Core\\EFCore\\EFCore\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ashilin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+        "C:\\Users\\jhggjhgjh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -1258,7 +1250,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

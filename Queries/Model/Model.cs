@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
+using System.Linq;
 
 namespace QueriesToOracle
 {
@@ -8,6 +9,11 @@ namespace QueriesToOracle
         public DbSet<IdentRisk> IdentRisks { get; set; }
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<TKeyValue> KeyValues { get; set; }
+        public DbSet<IdentData> IdentDatas { get; set; }
+        public IQueryable<IdentData> GetFromTable(DateTime date)
+        {
+            return null;//FromExpression(() => GetFromTable(date));
+        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseOracle(@"Data Source=dboracledev.ingo.office:1521/insbcp;Persist Security Info=True;User ID=INSURADM;Password=AisIngo");
@@ -15,11 +21,24 @@ namespace QueriesToOracle
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("Relational:DefaultSchema", "INSURADM");
+            //modelBuilder.HasDbFunction(() => GetFromTable(default));
             modelBuilder.ApplyConfiguration(new IdentRiskConfiguration());
             modelBuilder.ApplyConfiguration(new SubjectConfiguration());
             modelBuilder.ApplyConfiguration(new TKeyValueConfiguration());
+            modelBuilder.ApplyConfiguration(new IdentDataConfiguration());
         }
     }
+    public class IdentData
+    {
+        public int? Id { get; set; }
+        public int? SubjectId { get; set; }
+        public string SubjectName { get; set; }
+        public DateTime? DateBirth { get; set; }
+        public string Inn { get; set; }
+        public DateTime? DateIdentStart { get; set; }
+        public DateTime? DateIdentEnd { get; set; }
+    }
+
     public class TKeyValue
     {
         public string Key { get; set; }
